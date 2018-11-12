@@ -1,0 +1,59 @@
+/* Color scheme:
+#14CFEE Blue
+#A1A1A1 Gray
+#FFF123 Yellow*/
+/* 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+} */
+
+
+.navigation_bar {
+    background-color: #A1A1A1;
+    /* Our navigation bar is a list.  This hides the bullet points showing each list item. */
+    list-style-type: none;
+    /* float: left; */
+}
+
+/* .navigation_bar_content {
+    float: left;
+} */
+
+.dropdown_button {
+    /* background-color: #A1A1A1; */
+    padding: 16 px;
+    /* border: none; */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    /* This keeps the content hidden until the mouse hovers over the dropdown box */
+    display: none;
+    position: absolute;
+}
+
+.dropdown_content a {
+    display: block;
+    text-decoration: none;
+}
+
+/* This displays the contents of the dropdown button */
+.dropdown:hover .dropdown_content {
+    display:block
+}
+
+/* This changes the color of the dropdown button when the content is shown. */
+/* .dropdown:hover .dropdown_button {
+    background-color: #FFF123 */
+}
+
+.dropdown_content a:hover {
+    background-color: #14CFEE
+}
