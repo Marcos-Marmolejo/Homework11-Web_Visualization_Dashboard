@@ -9,7 +9,18 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="main.js"></script>
+
+    <style>
+            .yellow_color {
+                color: #FFF123;
+            }
+        
+            .blue_color{
+                color: #14CFEE;
+            }
+            </style>     
 </head>
+
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -21,7 +32,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand active" href="index.html">Tompanalytics</a>
+            <a class="navbar-brand active" href="index.html"><span class="blue_color">Tomp</span></span><span class="yellow_color">analytics</span></a>
           </div>
       
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,8 +45,8 @@
                 <ul class="dropdown-menu">
                   <li><a href="max_temperature_page.html">Latitude vs Max Temperature</a></li>
                   <li><a href="humidity_page.html">Latitude vs Humidity</a></li>
-                  <li><a href="#">Latitude vs Wind Speed</a></li>
-                  <li><a href="#">Latitude vs Cloudiness</a></li>
+                  <li><a href="wind_speed_page.html">Latitude vs Wind Speed</a></li>
+                  <li><a href="cloudiness_page.html">Latitude vs Cloudiness</a></li>
                    <!-- The lines below create a "divider" in the drop down box. -->
                   <!-- <li role="separator" class="divider"></li> -->
                   <!-- <li><a href="#">Separated link</a></li>
@@ -51,15 +62,25 @@
               <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author Links<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="https://www.linkedin.com/in/tylertompa/" target="_blank">LinkedIn</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="https://github.com/tylertompa" target="_blank">Author Github</a></li>
+                  <li><a href="https://github.com/TylerTompa/Homework11-Web_Visualization_Dashboard" target="_blank">Project Github</a></li>
+                  <!-- <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li> -->
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Links<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a></li>
+                  <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a></li>
+                  <li><a href="https://matplotlib.org/" target="_blank">Matplotlib</a></li>
+                  <li><a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap</a></li>
                 </ul>
               </li>
             </ul>

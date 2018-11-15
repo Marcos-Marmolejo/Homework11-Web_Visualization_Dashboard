@@ -9,63 +9,85 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="main.js"></script>
+
+    <style>
+        .yellow_color {
+            color: #FFF123;
+        }
+    
+        .blue_color{
+            color: #14CFEE;
+        }
+        </style>
+    
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand active" href="index.html">Tompanalytics</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand active" href="index.html"><span class="blue_color">Tomp</span></span><span class="yellow_color">analytics</span></a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="data_page.html">Data<span class="sr-only">(current)</span></a></li>
+          <li><a href="comparisons_page.html">Comparisons</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" class="active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a href="max_temperature_page.html">Latitude vs Max Temperature</a></li>
+              <li><a href="humidity_page.html">Latitude vs Humidity</a></li>
+              <li><a href="wind_speed_page.html">Latitude vs Wind Speed</a></li>
+              <li><a href="cloudiness_page.html">Latitude vs Cloudiness</a></li>
+               <!-- The lines below create a "divider" in the drop down box. -->
+              <!-- <li role="separator" class="divider"></li> -->
+              <!-- <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li> -->
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
           </div>
-      
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="data_page.html">Data<span class="sr-only">(current)</span></a></li>
-              <li><a href="comparisons_page.html">Comparisons</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li class="active"><a href="max_temperature_page.html">Latitude vs Max Temperature</a></li>
-                  <li><a href="humidity_page.html">Latitude vs Humidity</a></li>
-                  <li><a href="#">Latitude vs Wind Speed</a></li>
-                  <li><a href="#">Latitude vs Cloudiness</a></li>
-                   <!-- The lines below create a "divider" in the drop down box. -->
-                  <!-- <li role="separator" class="divider"></li> -->
-                  <!-- <li><a href="#">Separated link</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">One more separated link</a></li> -->
-                </ul>
-              </li>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author Links<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://www.linkedin.com/in/tylertompa/" target="_blank">LinkedIn</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="https://github.com/tylertompa" target="_blank">Author Github</a></li>
+              <li><a href="https://github.com/TylerTompa/Homework11-Web_Visualization_Dashboard" target="_blank">Project Github</a></li>
+              <!-- <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li> -->
             </ul>
-            <form class="navbar-form navbar-left">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Links<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a></li>
+              <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a></li>
+              <li><a href="https://matplotlib.org/" target="_blank">Matplotlib</a></li>
+              <li><a href="https://getbootstrap.com/docs/3.3/" target="_blank">Bootstrap</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
       <img src="../images/latitude_vs_max_temperature.png">
 
