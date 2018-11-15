@@ -28,14 +28,14 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="data_page.html">Data<span class="sr-only">(current)</span></a></li>
-              <li><a href="comparisons_page.html">Comparisons</a></li>
+              <li class="active"><a href="comparisons_page.html">Comparisons</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Visualizations <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li><a href="max_temperature_page.html">Latitude vs Max Temperature</a></li>
                   <li><a href="humidity_page.html">Latitude vs Humidity</a></li>
-                  <li><a href="wind_speed_page.html">Latitude vs Wind Speed</a></li>
-                  <li><a href="cloudiness_page.html">Latitude vs Cloudiness</a></li>
+                  <li><a href="#">Latitude vs Wind Speed</a></li>
+                  <li><a href="#">Latitude vs Cloudiness</a></li>
                    <!-- The lines below create a "divider" in the drop down box. -->
                   <!-- <li role="separator" class="divider"></li> -->
                   <!-- <li><a href="#">Separated link</a></li>
@@ -51,24 +51,15 @@
               <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Author Links<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="https://www.linkedin.com/in/tylertompa/" target="_blank">LinkedIn</a></li>
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="https://github.com/tylertompa" target="_blank">Author Github</a></li>
-                  <li><a href="https://github.com/TylerTompa/Homework11-Web_Visualization_Dashboard" target="_blank">Project Github</a></li>
-                  <!-- <li><a href="#">Something else here</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li> -->
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Links<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap API</a></li>
-                  <li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a></li>
-                  <li><a href="https://matplotlib.org/" target="_blank">Matplotlib</a></li>
+                  <li><a href="#">Separated link</a></li>
                 </ul>
               </li>
             </ul>
@@ -76,19 +67,8 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <div>
-        <p>You have probably heard that the closer you are to the equator, the hotter the temperature is.  Does this hold true?  If so, does the proximity to the equator also affect other weather-related variables.  On this website you can examine how the proximity to the equator affects: 
-            <ul>
-                <li>(Max) Temperature</li>
-                <li>Humidity</li>
-                <li>Cloudiness</li>
-                <li>Wind Speed</li>
-            </ul>
-        </p>
-        <p>
-            We pulled data on over 500 cities from the <a href="https://openweathermap.org/api" target="blank">OpenWeatherMap API</a>.  The full list of cities and all relevant data can be found <a href="" target="blank">here</a>.  After retrieving the data, we used the <a href="https://pandas.pydata.org/" target="blank">python library pandas</a> to organize the data into a dataframe.  Thereafter we used the <a href="https://matplotlib.org/" target="blank">python library Matplotlib</a> to plot selected columns from our dataframe, and thereby visually analyze whether there are any relationships between the weather-related variables.
-        </p>
-    </div>
+      <img src="../images/latitude_vs_max_temperature.png"> <br>
+      <img src="../images/latitude_vs_humidity.png">
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
