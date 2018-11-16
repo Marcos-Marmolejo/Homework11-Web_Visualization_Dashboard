@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../weather_data_website.css">
     <script src="main.js"></script>
 
     <style>
@@ -23,7 +25,9 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+    <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -88,22 +92,67 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-
-      <div>
-        <p>You have probably heard that the closer you are to the equator, the hotter the temperature is.  Does this hold true?  If so, does the proximity to the equator also affect other weather-related variables.  On this website you can examine how the proximity to the equator affects: 
-            <ul>
-                <li>(Max) Temperature</li>
-                <li>Humidity</li>
-                <li>Cloudiness</li>
-                <li>Wind Speed</li>
-            </ul>
-        </p>
-        <p>
-            We pulled data on over 500 cities from the <a href="https://openweathermap.org/api" target="blank">OpenWeatherMap API</a>.  The full list of cities and all relevant data can be found <a href="" target="blank">here</a>.  After retrieving the data, we used the <a href="https://pandas.pydata.org/" target="blank">python library pandas</a> to organize the data into a dataframe.  Thereafter we used the <a href="https://matplotlib.org/" target="blank">python library Matplotlib</a> to plot selected columns from our dataframe, and thereby visually analyze whether there are any relationships between the weather-related variables.
-        </p>
     </div>
 
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 white_color">
+      <h1>Tompanalytics</h1> <hr>
+      <div class="row">
+          <div class="col-sm-4">
+        <img src="../images/latitude_vs_max_temperature.png" class="img-thumbnail">
+        <!-- <img src="../images/latitude_vs_max_temperature.png"> -->
+          </div>
+          <div class="col-sm-8">
+          <p>You have probably heard that the closer you are to the equator, the hotter the temperature is.  Does this hold true?  If so, does the proximity to the equator also affect other weather-related variables.  On this website you can examine how the proximity to the equator affects: 
+              <ul>
+                  <li>(Max) Temperature</li>
+                  <li>Humidity</li>
+                  <li>Cloudiness</li>
+                  <li>Wind Speed</li>
+              </ul>
+          </p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+            <p>
+                We pulled data on over 500 cities from the <a href="https://openweathermap.org/api" target="blank">OpenWeatherMap API</a>.  The full list of cities and all relevant data can be found <a href="" target="blank">here</a>.  After retrieving the data, we used the <a href="https://pandas.pydata.org/" target="blank">python library pandas</a> to organize the data into a dataframe.  Thereafter we used the <a href="https://matplotlib.org/" target="blank">python library Matplotlib</a> to plot selected columns from our dataframe, and thereby visually analyze whether there are any relationships between the weather-related variables.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 white_color">
+      <h1>Visualizations</h1><hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="max_temperature_page.html"><img src="../images/latitude_vs_max_temperature.png" class="img-thumbnail"></a>
+        </div>
+        <div class="col-sm-6">
+          <a href="humidity_page.html"><img src="../images/latitude_vs_humidity.png" class="img-thumbnail"></a>
+          <br> <br>
+        </div> 
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="wind_speed_page.html"> <img src="../images/latititude_vs_wind_speed.png" class="img-thumbnail"></a>
+        </div>
+        <div class="col-sm-6">
+          <a href ="cloudiness_page.html"><img src="../images/latitude_vs_cloudiness.png" class="img-thumbnail"></a>
+          <p><!--This is just to add a little white space to the bottom of the visualizations box.--></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 </body>
 </html>
