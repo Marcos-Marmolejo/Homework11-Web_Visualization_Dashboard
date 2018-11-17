@@ -6,3 +6,26 @@ body {
 .white_color {
     background-color: #FFFFFF
 }
+
+.yellow_color {
+    color: #FFF123;
+}
+
+.blue_color{
+    color: #14CFEE;
+}
+
+.gray_background {
+text-shadow:
+    0px 0px 1px #A1A1A1,
+    -1px -1px 1px #A1A1A1,
+    1px -1px 1px #A1A1A1,
+    -1px 1px 1px #A1A1A1,
+    1px 1px 1px #A1A1A1;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
