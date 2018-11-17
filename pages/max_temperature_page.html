@@ -95,7 +95,7 @@
             <div class="row">
               <div class="col-sm-12">
                   <p>
-                      We pulled data on over 500 cities from the <a href="https://openweathermap.org/api" target="blank">OpenWeatherMap API</a>.  The full list of cities and all relevant data can be found <a href="" target="blank">here</a>.  After retrieving the data, we used the <a href="https://pandas.pydata.org/" target="blank">python library pandas</a> to organize the data into a dataframe.  Thereafter we used the <a href="https://matplotlib.org/" target="blank">python library Matplotlib</a> to plot selected columns from our dataframe, and thereby visually analyze whether there are any relationships between the weather-related variables.
+                      As the graph shows, the closer a city's latitude is to 0, the higher it's (max) temperature is for that day.  As the latitudes move away from 0, regardless of whether they move in a positive or negative direction, the (max) temperatures tend to decrease.  We should also point out that cities with a positive latitude seem to be affected more by their latitude, than cities with a negative latitude; that is, the temperature of cities with a positive latitude drop more quickly as they move away from the equator.
                   </p>
               </div>
             </div>
