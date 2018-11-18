@@ -29,3 +29,11 @@ text-shadow:
   margin-right: auto;
   margin-left: auto;
 }
+
+
+.first-image {
+   width: 50%;
+   float: left;
+   margin : 5px;
+   background-color: #FFFFFF;
+}
